@@ -1,0 +1,89 @@
+#maxbox{
+    width: 918px;
+    height: 678px;
+    background: #fff;
+    border: 1px solid #999;
+    padding: 15px;
+    margin: 15px 0 0 15px;
+}
+
+#boxT{
+    height: 32px;
+    width: 100%
+    /* background: #b7782b; */
+}
+#boxT ul{
+    display: block;
+    float: left;
+    height: 32px;
+    width: 488px;
+}
+
+#boxT ul li{
+    float: left;
+    height: 32px;
+    margin-right: 20px;
+}
+#boxT li.active{
+    background: #b7782b;
+}
+
+#boxT ul li a{
+    font: 14px/32px "";
+    padding:  9px 16px;
+    /* margin-right: 20px; */
+    color: #666;
+}
+#boxT ul li a:hover{
+    background: #b7782b;
+}
+
+#boxT em{
+    display: block;
+    float: right;
+    /* height: 32px; */
+    font: 14px/32px "";
+    color: #666;
+}
+#boxT em a:hover{
+    color: #b7782b;
+}
+
+#txt{
+    height: 630px;
+}
+#txt div{
+    height: 630px;
+    display: none;
+}
+
+#txt .boxB{
+    height: 630px;
+    width: 100%;
+    background: #ff7780;
+    margin-top: 15px;
+    display: block;
+}
+
+#txt .boxB2{
+    height: 630px;
+    width: 100%;
+    background: #fff3;
+    margin-top: 15px;
+}
+
+#txt .boxB3{
+    height: 630px;
+    width: 100%;
+    background: #ff1;
+    margin-top: 15px;
+}
+
+#txt .boxB4{
+    height: 630px;
+    width: 100%;
+    background: #f333;
+    margin-top: 15px;
+}
+/* .cont div{}
+.cont span{} */

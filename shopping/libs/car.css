@@ -1,0 +1,74 @@
+body{background: #f4f5f7;}
+
+
+*{margin: 0;padding: 0;}
+#wrapper{margin: 0 auto;width: 480px;}
+#toTop {display: none;text-decoration: none;position: fixed;bottom: 40px;right: 170px;overflow: hidden;width:110px;height: 40px;border: none;text-indent: 100%;background: url(images/top-arrow.png) no-repeat #ff7800 10px 15px;text-align: center;}
+#toTop strong{font-size:14px;color: #ff7800;background: #fff;padding: 6px 20px;}
+/* #toTop img{width:60px;height: 25px;position: fixed;bottom: 40px;right: 195px;} */
+
+.margin{width: 1200px;margin: 0 auto;}
+#top{height: 38px;border-bottom: 1px solid #999;background: #fff;}
+#top s{font: 12px/38px "";color: #666;}
+#top span{font: 12px/38px "";color: #666;}
+#top span:hover{color: #ff7800;}
+#top .t-l{float: left;}
+#top .t-r{float: right;}
+#top .t-r b{font: 12px/38px "";color: #c8864a}
+#btn1{border: none;background: none;cursor: pointer;color: #666;font-size: 12px;}
+#top .t-l input:hover{color: #ff7802;}
+#top .t-r input:hover{color: #ff7802;}
+
+
+#btn2{border: none;background: none;cursor: pointer;color: #666;font-size: 12px;}
+#header{height: 163px;background: #fff;}
+#header .h-l{height: 163px;width:240px;position: relative;float: left;}
+#header .h-l img{position: absolute;left: 0;top: 38px;}
+#header .h-l p{width: 240px;height: 42px;background: #ff7900;position: absolute;left: 0;bottom: 0;}
+#header .h-l p a{font:700 16px/42px "";color: #fff;margin-left: 18px;}
+
+#top .changebox{display:none;width: 698px;height: 385px;border:1px solid #999;position: absolute;left:160px;top: 38px;z-index: 1000;background: #fff;}
+#top .changebox ul{}
+#top .changebox ul li{}
+#top .changebox ul li .cbox1{width: 90px;height: 38px;text-align: center;float: left;border-right: 1px solid #999;border-bottom: 1px solid #999;}
+#top .changebox ul li .cbox1 b{font: 12px/38px "";color: #000;}
+#top .changebox ul li .cbox2{width: 606px;height: 38px;text-align: center;float: left;text-align: left;border-bottom: 1px solid #999;}
+#top .changebox ul li .cbox2 s{height:38px;font-size:12px;color: #666;margin-left:15px;padding: 4px 6px;cursor: pointer;}
+#top .changebox ul li .cbox2 s:hover{background: #ff7800;}
+#top .changebox p{font: 12px/38px "";color: #666;margin-left:200px;}
+
+
+#header .h-c{float: left;height: 163px;}
+#header .h-c form{display:block;margin:45px 0 0 130px;}
+#txt{width: 402px;height: 38px;border: 2px solid #ff7900;float: left;}
+#sub{cursor: pointer;width: 80px;height: 42px;background: #ff7900;border: none;float: left;font:650 16px/42px "";color: #fff;}
+#header .h-c ul{margin-left: 10px;}
+#header .h-c ul li{float: left;height:43px;text-align: center;margin:30px 0 0 60px;}
+#header .h-c ul li.te{border-bottom:3px solid #ff7900;}
+#header .h-c ul li.te a{color: #ff7900;}
+#header .h-c ul li a{font:800 18px/48px "";color: #7c6048}
+/* #header .h-c ul li a.te{border-bottom:3px solid #ff7900;} */
+#header ul li:hover{border-bottom:3px solid #ff7900;}
+#header ul li:hover a{color: #ff7900;}
+
+#header .h-r{float: left;width:326px;height: 163px;position: relative;}
+#header .h-r .boxx{right: 0;top: 46px;height:42px;border: 1px solid #666;position: absolute;right: 0;top:46px;}
+#header .h-r .boxx p1{float: left;display: block;width: 120px;height: 42px;text-align: center;}
+#header .h-r .boxx p2{float: left;display: block;width: 120px;height: 42px;border-left:1px solid #666;text-align: center;}
+#header .h-r .boxx p1 a{font: 12px/42px "";color: #666}
+#header .h-r .boxx p2 a{font: 12px/42px "";color: #666}
+
+.margin{width: 1200px;margin: 0 auto;}
+table{margin-top: 20px;}
+table tr{height: 50px;}
+table tr th{font: 700 16px/50px "";color: #333;}
+table td{font: 16px/120px "";color: #999;text-align: center;}
+table td:nth-child(2){font: 16px/120px "";color: #999;text-align: left;}
+table td:nth-child(3){font:700 20px/120px "";color: red;}
+table img{width:100%;height:120px;}
+table .del{width:40px;background:#ccf;}
+.btom h2{height: 60px;width: 1200px;position:fixed;bottom: 0;background:  #ff7800;z-index: 2;}
+.btom small a{margin-left:15px;font: 16px/60px "";color: #fff;float: left;}
+.btom b{font: 16px/60px "";color: #fff;position:fixed;bottom: 0;right:600px;z-index: 3;}
+.btom span{font: 700 20px/60px "";color: red;position:fixed;bottom: 0;right:530px;z-index: 3;}
+.btom s{font: 700 30px/60px "";color: #ffff;position:fixed;bottom: 0;right:400px;z-index: 3;cursor: pointer;}

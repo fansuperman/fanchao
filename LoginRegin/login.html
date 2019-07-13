@@ -1,0 +1,294 @@
+<!Doctype html>
+<html lang="en">
+ 
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	</head>
+	<body>
+		<!-- 顶部 -->
+		<div id="top">
+				<div class="margin clear">               
+					<div class="t-l">
+						<s>您好，欢迎来到爱出发！</s> &nbsp;&nbsp;&nbsp;<a href="#"><img src="../image/a1.png"/> <s>上海</s>&nbsp;<span>更换省份</span> <img src="../image/a2.png"/></a>
+					</div>
+					<div class="t-r">
+						<a href="http://localhost/xiangmu/LoginRegin/login.html">[<b>登录</b>]</a>
+						<a href="http://localhost/xiangmu/LoginRegin/reginster.html">[<b>免费注册</b>]</a>
+						&nbsp;|&nbsp;<a href="#"><img src="../image/a3.png"/> &nbsp;<s>最近浏览</s><img src="../image/a2.png"/> | <img src="../image/a4.png"/> <span>手机APP</span></a>
+					</div>
+				</div>
+			</div>
+			<!-- 头部 -->
+			<div id="header">
+				<div class="margin clear">
+					<div class="h-l">
+						<img src="../image/logo.png"/>
+						<p><a href="#">随心游推荐</a></p>
+					</div>
+					<div class="h-c">
+						<form>
+							<input type="text" id="txt" placeholder="&nbsp;&nbsp;&nbsp;目的地,酒店,景点关键词"/>
+							<input type="submit" id="sub" value="搜索"/>
+						</form>
+						<ul>
+							<li class="te"><a href="http://localhost/xiangmu/index.html/index.html">首页</a></li>
+							<li><a href="#">每周新品</a></li>
+							<li><a href="#">好去处</a></li>
+							<li><a href="#">团购预约</a></li>
+							<li><a href="#">手机版下载</a></li>
+						</ul>
+					</div>
+					<div class="h-r">
+						<div class="box">
+							<p1><a href="#"><img src="../image/a6.png"/> 我的爱出发</a></p1>
+							<p2><a href="http://localhost/xiangmu/shopping/list.html"><img src="../image/a7.png"/> 订单查询</a></p2>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--登录注册二选一弹出框-->
+		<div id="loginOrRegister">
+			<!--标题-->
+			<div class="title">
+				<span class="login colorRed" onclick="goLogin()">用户登录</span>
+				<span class="register" onclick="goRegister()"><a href="http://localhost/xiangmu/LoginRegin/reginster.html">免费注册</a>&nbsp;&nbsp;|</span>
+				<b>忘记密码</b>
+			</div>
+			<!--具体信息-->
+			<div id="formInformation">
+				<!--登录界面-->
+				<div class="loginForm">
+					<ul class="box box1">
+						<li>
+							<label for="account">账号</label>
+							<input type="text" placeholder="请输入您的账号（即手机号）" class="account" id="account" />
+							<span class="error"></span>
+						</li>
+						<li>
+							<label for="password">密码</label>
+							<input type="password" class="password" id="password" placeholder="请输入密码" />
+							<span class="error"></span>
+						</li>
+						<li>
+							<label for="authCode">验证码</label>
+							<input type="text" class="sradd photokey" id="authCode" placeholder="请输入收到的验证码" />
+							<span class="add authCode"></span>
+							<span class="error"></span>
+						</li>
+					</ul>
+					<div class="submit">
+						<!-- <a href="file:///D:/phpStudy/PHPTutorial/WWW/xaingmu/html/index.html"> -->
+						<input type="submit" value="立即登录" id="btn"/>
+						</a>
+					</div>
+				</div>
+				<!--注册界面-->
+				<form action="www.baidu.com" method="post" class="registerForm">
+					<ul class="box box2">
+						<li>
+							<label for="phone">手机</label>
+							<input type="text" placeholder="请输入您的手机号码" id="phone" maxlength="11" />
+							<span class="error"></span>
+						</li>
+						<li>
+							<label for="authCode2">验证码</label>
+							<input type="text" class="sradd phonekey" id="authCode2" placeholder="请输入收到的验证码" />
+							<span class="add sendaAuthCode">发送验证码</span>
+							<span class="error"></span>
+						</li>
+						<li>
+							<label for="password2">密码</label>
+							<input type="password" class="password" id="password2" placeholder="请输入密码" />
+							<span class="error"></span>
+						</li>
+						<li>
+							<label for="password3">确认密码</label>
+							<input type="password" class="email" id="password3" placeholder="请再次输入密码" />
+							<span class="error"></span>
+						</li>
+					</ul>
+					<div class="submit">
+						<input type="submit" value="立即注册" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="margin">
+			<div id="imgbox">
+				<img src="../image/154565652.png"/>
+			</div>
+		</div>
+		<!-- 脚部 -->
+		<div id="footer">
+				<div class="margin clear">
+				<!-- 脚步顶部导航内容 -->
+					<div class="ft">
+						<ul>
+							<li>
+								<i class="i1"></i>
+								<a href="#">品质保证</a>
+							</li>
+							<li>
+								<i class="i2"></i>
+								<a href="#">无房退款</a>
+							</li>
+							<li>
+								<i class="i3"></i>   
+								<a href="#">关于我们</a>
+							</li>
+							<li>
+								<i class="i4"></i>    
+								<a href="#">帮助中心</a>
+							</li>
+							<li>
+								<i class="i5"></i>        
+								<a href="#">APP下载</a>
+							</li>
+						</ul>
+					</div>
+				<!-- 脚步中间部分 -->
+					<div class="fb">
+					<!-- 中间左边列表内容 -->
+						<div class="fa">
+							<dl>
+								<dt>关于爱出发</dt>
+								<a href="#"><dd>团队介绍</dd></a>
+								<a href="#"><dd>招聘信息</dd></a>
+								<a href="#"><dd>新闻动态</dd></a>
+							</dl>
+							<span class="s1"></span>
+							<dl>
+								<dt>帮助中心</dt>
+								<a href="#"><dd>常见问题</dd></a>
+								<a href="#"><dd>积分规则</dd></a>
+								<a href="#"><dd>现金券规则</dd></a>
+								<a href="#"><dd>预定说明</dd></a>
+								<a href="#"><dd>团购预约</dd></a>
+								<a href="#"><dd>支付说明</dd></a>
+							</dl>
+							<span class="s2"></span>
+							<dl>
+								<dt>客服服务</dt>
+								<a href="#"><dd>品质承诺</dd></a>
+								<a href="#"><dd>客户电话</dd></a>
+								<a href="#"><dd>自助预约</dd></a>
+								<a href="#"><dd>联系我们</dd></a>
+								<b>400-1108-4040</b>
+							</dl>
+						</div>
+					<!-- 中间右边二维码内容 -->
+						<!-- 大框 -->
+						<div class="f-box">
+							<!-- box1整体 -->
+							<div class="erbox1">
+								<img src="../image/erweima1.png"/>
+								<p>APP下载</p>
+							</div>
+							<!-- box2整体 -->
+							<div class="erbox2">
+								<img src="../image/erweima2.png"/>
+								<p>微信公众号</p>
+							</div>
+						</div>
+		
+					</div>  <!--class="fb"结束部分-->
+		
+		
+					<!-- 脚步最底下内容 -->
+					<div class="fbot">
+						<!-- 友情链接 -->
+							<div class="youqing">
+								<h4>友情链接:&nbsp;</h4>
+								<ul>
+									<li><a href="#">酷伢亲子房</a></li>
+									<li><a href="#">亲子房</a></li>
+									<li><a href="#">如影旅游网</a></li>
+									<li><a href="#">亲子游记</a></li>
+									<li><a href="#">内蒙古旅游网</a></li>
+									<li><a href="#">四川旅游景点</a></li>
+									<li><a href="#">深圳旅行社</a></li>
+									<li><a href="#">深圳景点门票</a></li>
+									<li><a href="#">京郊自驾游</a></li>
+								</ul>
+							</div>
+		
+							<div class="tup">
+								<ul>
+									<li class="te"><a href="#"><img src="../image/f1.png"/></a></li>
+									<li><a href="#"><img src="../image/f2.png"/></a></li>
+									<li><a href="#"><img src="../image/f3.png"/></a></li>
+									<li><a href="#"><img src="../image/f4.png"/></li>
+									<li><a href="#"><img src="../image/f5.png"/></li>
+								</ul>
+							</div>
+							<div class="xinxi">
+								<p>中华人民共和国增值电信业务经营许可证 经营许可证编号：粤B2-20130613</p>
+								<p>旅行社业务经营许可证编号：L-GD01685</p>
+								<p>版权所有 © 广州酷旅旅行社有限公司 2009-2019 粤ICP备11008339号</p>
+							</div>
+						
+					</div>      <!--脚步fbot最底下内容结束部分-->
+		
+		
+				</div>      <!--margin clear结束部分-->>
+			</div>       <!--footer结束部分-->   
+	</body>
+ 
+</html>
+<script src="../jquery.js"></script>
+<script>
+    function goLogin() {
+	$(".loginForm").css("display", "block");
+	$(".registerForm").css("display", "none");
+	$(".login").addClass("colorRed");
+	$(".register").removeClass("colorRed");
+}
+切换注册
+function goRegister() {
+	$(".registerForm").css("display", "block");
+	$(".loginForm").css("display", "none");
+	$(".register").addClass("colorRed");
+	$(".login").removeClass("colorRed");
+}
+</script>
+<script src="js/ajax.js" ></script>
+
+<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	console.log(1);
+    
+	
+	class login{
+		constructor(){
+			this.account=document.querySelector("#account");
+			this.password=document.querySelector("#password");
+			this.btn=document.querySelector("#btn");
+			this.init()
+		}
+		init(){
+			var that=this;
+			this.btn.onclick=function(){
+				console.log(1)
+				var url="http://localhost/xiangmu/LoginRegin/js/login.php"
+				ajaxPost(url,
+				function(res){
+					console.log(res)
+					if(res=="1"){
+						location.href="http://localhost/xiangmu/index.html/index.html"
+					}	
+				},
+				{
+					u:that.account.value,
+					p:that.password.value
+				}
+				)
+			}
+			
+		}
+	}
+	new login()
+</script>
